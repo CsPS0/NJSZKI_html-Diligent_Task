@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/forras/kepek/cuphead_icon.png">
     <link rel="stylesheet" href="/forras/CSS/style.css">
     <title>Csészefej és Bögrearc</title>
 </head>
@@ -10,124 +11,135 @@
     <header>
         <div class="slideshow-container">
             <div class="mySlides fade">
-                <img src="/forras/kepek/cuphead.jpg" draggable="false">
+                <img src="/forras/kepek/cuphead.jpg" style="width:100%" draggable="false">
             </div>
             <div class="mySlides fade">
-                <img src="/forras/kepek/cuphead1.jpg" draggable="false">
+                <img src="/forras/kepek/cuphead1.jpg" style="width:100%" draggable="false">
             </div>
             <div class="mySlides fade">
-                <img src="/forras/kepek/cuphead2.jpg" draggable="false">
+                <img src="/forras/kepek/cuphead2.jpg" style="width:100%" draggable="false">
             </div>
         </div>
     </header>
     <nav>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <div class="topnav" id="myTopnav">
+        <div id="myTopnav" class="topnav">
             <a href="#tortenet" class="active">Történet</a>
             <a href="#cast">Színészek</a>
             <a href="#interests">Érdekességek</a>
             <a href="#details">Részletek</a>
             <a href="#faq">Gyakor kérdések</a>
-            <select name="languages" id="languages">
-                <option value="hun">Hun</option>
-                <option value="eng">Eng</option>
-            </select>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
     </nav>
-    <main>
-        <section id="tortenet"> <!-- Történet -->
+    <main role="main">
+        <section id="tortenet" class="section">
             <h2>Történet</h2>
             <div>
                 <h3>Bevezetés</h3>
-                <p></p>
                 <figure>
-                    <picture>
-                        <source src="">
-                    </picture>
-                    <figcaption>#</figcaption>
+                    <img src="/forras/kepek/cuphead.jpg" alt="Cuphead karakterek" draggable="false">
+                    <figcaption>Cuphead és Mugman</figcaption>
                 </figure>
             </div>
             <div>
                 <h3>Bonyodalom</h3>
-                <p></p>
                 <figure>
-                    <video autoplay loop muted>
-                        <source src="">
-                        Nem támogatja a böngésződ
-                    </video>
-                    <figcaption>#</figcaption>
+                    <img src="/forras/kepek/cuphead1.jpg" alt="Cuphead küzdelme" draggable="false">
+                    <figcaption>Cuphead és Mugman küzdelme</figcaption>
                 </figure>
             </div>
             <div>
                 <h3>Befejezés</h3>
-                <p></p>
                 <figure>
-                    <picture>
-                        <source src="">
-                    </picture>
-                    <figcaption>#</figcaption>
+                    <img src="/forras/kepek/cuphead2.jpg" alt="Cuphead győzelme" draggable="false">
+                    <figcaption>Cuphead és Mugman győzelme</figcaption>
                 </figure>
             </div>
         </section>
-        <section id="cast"> <!-- Színészek | Kerekített kártyák, egy lekerekített profilképpel, alatta a személy neve és hr-al elválasztva rövid leírás. -->
-            <div>
-                
+        <section id="cast" class="section">
+            <h2>Színészek</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="/forras/kepek/actor1.jpg" alt="Színész 1">
+                    <h3>Színész 1</h3>
+                    <p>Szerep</p>
+                </div>
+                <div class="card">
+                    <img src="/forras/kepek/actor2.jpg" alt="Színész 2">
+                    <h3>Színész 2</h3>
+                    <p>Szerep</p>
+                </div>
+                <!-- További színész kártyák -->
             </div>
         </section>
-        <section id="interests"> <!-- Érdekességek -->
+        <section id="interests" class="section">
+            <h2>Érdekességek</h2>
             <div>
                 <h3>Apróságok</h3>
                 <p>A Cuphead fejét mint bolygót és a körülötte repülőben repülő Mugmant ábrázoló animáció minden epizód elején tisztelgés a Universal Studios régi címlapja előtt.</p>
-                <p>A sorozat dialógusa a poklot "The Underworld"-nak nevezi, hogy ne sértse meg a szülőket. A hangleírás azonban néhány epizódban továbbra is „pokolnak” nevezi.</p>
+                <p>A sorozat dialógusa a poklot "The Underworld"-nak nevezi, hogy ne sértse meg a szülőket. A hangleírás azonban néhány epizódban továbbra is "pokolnak" nevezi.</p>
             </div>
             <div>
                 <h3>Őrült kreditek</h3>
-                <p>
-                    A sorozat úgy kezdődik, hogy Mugman egy kétfedelű repülőgépen kering egy óriási Cuphead's kupán.
-                    <br>
-                    Ez az 1930-as évek Universal Pictures logójának paródiája, amely az 1930-as évek helyszínét tükrözi.
-                </p>
+                <p>A sorozat úgy kezdődik, hogy Mugman egy kétfedelű repülőgépen kering egy óriási Cuphead's kupán. Ez az 1930-as évek Universal Pictures logójának paródiája, amely az 1930-as évek helyszínét tükrözi.</p>
             </div>
             <div>
                 <h3>Hivatkozások</h3>
-                <p>
-                    <a href="https://www.imdb.com/title/tt0080752/">Tiltott zóna</a> (1980)
-                    <br>
-                    A kifejezés használata: "Ah, banánolaj!" Zene és énekstílus is.
-                </p>
+                <p>A kifejezés használata: "Ah, banánolaj!" Zene és énekstílus is.</p>
+                <p>Tiltott zóna (1980)</p>
             </div>
             <div>
                 <h3>Címdal</h3>
-                <p>
-                    Üdvözöljük a Cuphead Show-n! (Fő címadó dal)<br>
-                    Írta: <a href="https://www.imdb.com/name/nm0782226/">Cosmo Segurson</a>, <a href="https://www.imdb.com/name/nm0913739/">Dave Wasson</a>, <a href="https://www.imdb.com/name/nm1099418/">Ego Plum</a><br>
-                    Gizzelle Andrea Becerra előadásában<br>
-                    Rendező és producer: <a href="https://www.imdb.com/name/nm1099418/">Ego Plum</a>
-                </p>
+                <p>Üdvözöljük a Cuphead Show-n! (Fő címadó dal)<br>
+                Írta: Cosmo Segurson, Dave Wasson, Ego Plum<br>
+                Gizzelle Andrea Becerra előadásában<br>
+                Rendező és producer: Ego Plum</p>
             </div>
         </section>
-        <section id="details"> <!-- Részletek -->
-            <div>
-
+        <section id="details" class="section">
+            <h2>Részletek</h2>
+            <div class="details-table">
+                <table>
+                    <tr>
+                        <th>Megjelenés dátuma</th>
+                        <td>2022 Február 18.</td>
+                    </tr>
+                    <tr>
+                        <th>Származási országok</th>
+                        <td>Kanada, Egyesült Államok</td>
+                    </tr>
+                    <tr>
+                        <th>Hivatalos oldal</th>
+                        <td><a href="https://www.netflix.com/search?q=cuphead&jbv=80242531" target="_blank">Netflix</a></td>
+                    </tr>
+                    <tr>
+                        <th>Termelő cégek</th>
+                        <td>Netflix Animáció, King Feutures Syndicate, Studio MDHR</td>
+                    </tr>
+                    <tr>
+                        <th>Futásidő (részenként)</th>
+                        <td>12 perc</td>
+                    </tr>
+                    <tr>
+                        <th>Hangkeverék</th>
+                        <td>Dolby Digital</td>
+                    </tr>
+                    <tr>
+                        <th>Képarány</th>
+                        <td>16:9 HD</td>
+                    </tr>
+                </table>
             </div>
         </section>
-        <section id="faq"> <!-- Gyakori kérdések -->
-            <div>
-
+        <section id="faq" class="section">
+            <h2>Gyakor kérdések</h2>
+            <div class="faq-container">
+                <a href="https://www.imdb.com/title/tt10611608/faq/" target="_blank">További gyakori kérdések és válaszok a IMDB-n</a>
             </div>
         </section>
     </main>
-    <footer>
-        <p>Készítő: Solti Csongor Péter szft3</p>
-        <p>források:</p>
-        <ul>
-            <li><a href="https://www.w3schools.com/howto/default.asp" target="_blank">W3Schools</a></li>
-            <li><a href="https://www.imdb.com/title/tt10611608/">IMDB</a></li>
-        </ul>
-    </footer>
     <script src="/forras/JS/script.js"></script>
 </body>
 </html>

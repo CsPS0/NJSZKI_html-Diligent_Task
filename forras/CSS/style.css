@@ -1,5 +1,5 @@
 * {
-    box-sizing:border-box;
+    box-sizing: border-box;
     user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -8,6 +8,14 @@
 body {
     overflow-x: hidden;
     overflow-y: auto;
+    background-color: #333;
+    color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    top: 0;
+    position: sticky;
 }
 
 .slideshow-container {
@@ -87,8 +95,9 @@ body {
     to {opacity: 1}
 }
 
+/* Navigációs menü stílusok */
 .topnav {
-    background-color: #333;
+    background-color: #222;
     overflow: hidden;
 }
 
@@ -116,6 +125,7 @@ body {
     display: none;
 }
 
+/* Reszponzív stílusok */
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {
         display: none;
@@ -126,12 +136,69 @@ body {
     }
 }
 
+.section {
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #444;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.details-table {
+    overflow-x: auto;
+}
+
+.details-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.details-table th, .details-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.details-table th {
+    background-color: #444;
+}
+
+.faq-container {
+    padding: 20px;
+}
+
+.faq-container a {
+    color: #04AA6D;
+    text-decoration: none;
+}
+
+.faq-container a:hover {
+    color: #ddd;
+}
+
 @media screen and (max-width: 600px) {
-.topnav.responsive {
+    .topnav.responsive {
         position: relative;
     }
 
-.topnav.responsive a.icon {
+    .topnav.responsive a.icon {
         position: absolute;
         right: 0;
         top: 0;
