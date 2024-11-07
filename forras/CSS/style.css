@@ -5,6 +5,7 @@
     -ms-user-select: none;
     scrollbar-width: none;
 }
+
 *::-webkit-scrollbar {
     display: none;
 }
@@ -23,18 +24,87 @@ nav {
     background-color: #222;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px;
     color: white;
+    margin-inline: 100px;
+    border-radius: 25px;
 }
 
 header img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    max-height: 500px;
+    justify-content: center;
 }
 
 video {
     max-width: 100%;
-    height: auto;
+    height: 200px;
+}
+
+section {
+    border: 3px solid yellow;
+    border-radius: 25px;
+    margin-block: 20px;
+    margin-inline: 100px;
+}
+
+section:nth-child(2) {
+    padding-bottom: 40px;
+}
+
+h2 {
+    text-align: center;
+}
+
+li {
+    margin: 0;
+	padding: 10px 0 10px 56px;
+	list-style: none;
+	background-image: url("/forras/kepek/mug.svg");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #04AA6D;
+}
+
+a:hover {
+    color: #555;
+}
+
+a:active {
+    color: #333;
+}
+
+
+#tortenet > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tortenet p {
+    text-align: left;
+    flex: 1;
+    margin-right: 20px;
+}
+
+#tortenet figure {
+    flex: 0 0 40%;
+    text-align: center;
+}
+
+#interests, #tortenet {
+    padding: 15px;
+    text-align: justify;
+}
+
+#tortenet, #interests, #faq {
+    border: 3px solid cyan;
 }
 
 .nav-links a {
@@ -44,10 +114,12 @@ video {
     font-size: 16px;
     transition: background-color 0.3s;
 }
+
 .nav-links a:hover {
     background-color: #555;
     color: #333;
 }
+
 .nav-links a.active {
     background-color: #04AA6D;
     color: white;
@@ -57,17 +129,20 @@ video {
     position: relative;
     display: inline-block;
 }
+
 .language-dropdown .dropbtn {
-    background-color: #333;
+    background-color: #444;
     color: #f2f2f2;
     padding: 10px;
     font-size: 16px;
     border: none;
     cursor: pointer;
 }
+
 .language-dropdown .dropbtn:hover {
-    background-color: #555;
+    background-color: #666;
 }
+
 .language-dropdown-content {
     display: none;
     position: absolute;
@@ -75,6 +150,7 @@ video {
     min-width: 100px;
     z-index: 1;
 }
+
 .language-dropdown-content a {
     color: white;
     padding: 10px;
@@ -82,9 +158,11 @@ video {
     text-align: left;
     text-decoration: none;
 }
+
 .language-dropdown-content a:hover {
     background-color: #04AA6D;
 }
+
 .language-dropdown:hover .language-dropdown-content {
     display: block;
 }
@@ -97,24 +175,6 @@ video {
 
 .mySlides {
     display: none;
-}
-
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
 }
 
 .prev:hover, .next:hover {
@@ -184,11 +244,16 @@ video {
     padding: 10px;
     cursor: pointer;
     transition: transform 0.3s;
-    border: 3px solid yellow;
+    border: 3px solid red;
 }
 
 .card:hover {
     transform: scale(1.05);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card:active {
+    transform: scale(1.2);
 }
 
 .card img {
@@ -230,20 +295,38 @@ video {
     color: #ddd;
 }
 
-@media screen and (max-width: 600px) {
-    .topnav.responsive {
-        position: relative;
+.topnav .icon {
+    display: none;
+    font-size: 24px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        margin-inline: 0;
     }
 
-    .topnav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
+    header img {
+        width: 100%;
+        max-height: 250px;
+        justify-content: center;
     }
 
-    .topnav.responsive a {
-        float: none;
+    .nav-links, .language-dropdown {
+        display: none;
+    }
+
+    .topnav.responsive .nav-links,
+    .topnav.responsive .language-dropdown {
         display: block;
         text-align: left;
+        width: 100%;
+    }
+
+    .topnav .icon {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
     }
 }
